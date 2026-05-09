@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notely Landingpage</title>
+    <title data-i18n="general.title"></title>
+<script type="module" src="/main.js"></script>
 </head>
 <body>
     
 <header>
-    <img src="/public/assets/svg/logo.svg" alt="logo notely svg">
     <div  class="lang-switch">
-        <button class="lang-btn">EN</button>
-        <button class="lang-btn">DE</button>
+        <button onclick="window.changeLanguage('en')" class="lang-btn">EN</button>
+        <button onclick="window.changeLanguage('de')" class="lang-btn">DE</button>
     </div>
 </header>
 <main>
     <section class="hero">
-        hero section
+        <p data-i18n="general.heroText"></p>
+<img src="/public/assets/svg/logo.svg" alt="logo notely svg">
     <element class="call-action">
-        <button class="call-btn"></button>
+        <button class="call-btn" data-i18n="general.callBtn"></button>
     </element>
     </section>
     <section class="survey">
@@ -26,9 +27,9 @@
     </section>
 </main>
 <footer>
-    <a href="">Conbtact</a>
-    <a href="">Imprint</a>
-    <a href="">Privacy Policy</a>
+    <a href="" data-i18n="general.contact"></a>
+    <a href="" data-i18n="general.imprint"></a>
+    <a href="" data-i18n="general.privacyPolicy"></a>
 </footer>
 </body>
 </html>
