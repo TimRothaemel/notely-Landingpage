@@ -1,11 +1,165 @@
 {
-    "general" : {
-    "title": "notely Landingpage",
-    "callBtn": "Save Now!",
+  "general": {
+    "title": "Notely | Minimal Startup Landing Page",
+    "joinEarlyAccess": "Join Early Access",
+    "loading": "Loading...",
     "contact": "Contact",
     "imprint": "Imprint",
     "privacyPolicy": "Privacy Policy",
-    "heroText": "Rethinking school.",
-    "heroSubtext": "Notely is the digital learning platform for students. All information, materials and dates in one place."
+    "backToHome": "Back to home"
+  },
+  "nav": {
+    "features": "Features",
+    "survey": "Survey",
+    "earlyAccess": "Early Access"
+  },
+  "hero": {
+    "title": "Turn your notes into AI flashcards that actually help you study.",
+    "subtitle": "Notely summarizes content, detects key concepts and builds clean flashcards from your notes in seconds.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Enter your email",
+    "note": "Be among the first users."
+  },
+  "stats": {
+    "waitlist": "Waitlist",
+    "responses": "Responses",
+    "countries": "Countries"
+  },
+  "preview": {
+    "title": "AI study mode",
+    "metric": "flashcards created",
+    "copy": "A long note becomes a focused set of questions and answers automatically.",
+    "secondaryTitle": "From note to card",
+    "secondaryMetric": "in a few seconds",
+    "secondaryCopy": "Key terms, definitions and quiz prompts are pulled straight from your material."
+  },
+  "features": {
+    "title": "Less organizing. More actual studying.",
+    "cards": {
+      "one": {
+        "title": "AI flashcard creation",
+        "text": "Turn notes into clear study cards automatically."
+      },
+      "two": {
+        "title": "Important points detected",
+        "text": "Key concepts and takeaways are pulled right out of your material."
+      },
+      "three": {
+        "title": "Mobile-first",
+        "text": "Review cards anywhere with calm layouts and fast repetition."
+      }
     }
+  },
+  "survey": {
+    "title": "Help shape the app",
+    "subtitle": "We're building this with the community from the start.",
+    "questions": {
+      "source": "1. Where did you find us?",
+      "feature": "2. Most wanted feature",
+      "premium": "3. Would you pay for premium?",
+      "price": "How much would you be willing to pay?",
+      "device": "4. Device type",
+      "feedback": "Optional feedback"
+    },
+    "options": {
+      "source": {
+        "instagram": "Instagram",
+        "tiktok": "TikTok",
+        "friend": "Friend",
+        "google": "Google",
+        "other": "Other"
+      },
+      "feature": {
+        "marketplace": "AI flashcards",
+        "community": "Study mode",
+        "tracking": "Progress",
+        "notifications": "Reminders"
+      },
+      "premium": {
+        "yes": "Yes",
+        "maybe": "Maybe",
+        "no": "No"
+      },
+      "price": {
+        "min": "€0",
+        "max": "€20+",
+        "free": "Free"
+      },
+      "device": {
+        "iphone": "iPhone",
+        "android": "Android"
+      }
+    },
+    "feedbackPlaceholder": "What should apps do better?",
+    "submit": "Send Feedback"
+  },
+  "cta": {
+    "title": "Get early access before the public launch.",
+    "subtitle": "Join the list for launch updates and first access.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Your email for the waitlist",
+    "button": "Get Early Access"
+  },
+  "footer": {
+    "socials": {
+      "instagram": "Instagram"
+    }
+  },
+  "legal": {
+    "home": "Home",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "backLink": "Back to landing page"
+  },
+  "imprintPage": {
+    "metaTitle": "Notely | Imprint",
+    "title": "Imprint",
+    "intro": "Information according to Section 5 TMG.",
+    "companyLabel": "Provider",
+    "companyValue": "Notely\nTim Rothamel\nSample Street 12\n10115 Berlin\nGermany",
+    "contactLabel": "Contact details",
+    "contactValue": "Email: hello@notely.app\nInstagram: @notely.app",
+    "responsibleLabel": "Responsible for content",
+    "responsibleValue": "Tim Rothamel",
+    "disclaimerLabel": "Liability notice",
+    "disclaimerValue": "Despite careful review, we assume no liability for the contents of external links. The operators of linked pages are solely responsible for their content."
+  },
+  "privacyPage": {
+    "metaTitle": "Notely | Privacy Policy",
+    "title": "Privacy Policy",
+    "intro": "This page explains how personal data is processed on this website.",
+    "sectionOneTitle": "1. Responsible party",
+    "sectionOneText": "The responsible party for data processing on this website is Notely, Tim Rothamel, Sample Street 12, 10115 Berlin, Germany.",
+    "sectionTwoTitle": "2. Collected data",
+    "sectionTwoText": "We process data that you voluntarily submit through the early access form or the survey, such as email addresses, feedback, device type and product preferences.",
+    "sectionThreeTitle": "3. Purpose of processing",
+    "sectionThreeText": "The submitted data is used to manage the waitlist, improve the product and understand which features are most relevant to future users.",
+    "sectionFourTitle": "4. Storage and tools",
+    "sectionFourText": "Submitted data is stored via Supabase. We only keep the information as long as it is necessary for product development, communication or legal obligations.",
+    "sectionFiveTitle": "5. Your rights",
+    "sectionFiveText": "You have the right to request information about stored personal data, correction, deletion or restriction of processing. You may also object to processing at any time."
+  },
+  "contactPage": {
+    "metaTitle": "Notely | Contact",
+    "title": "Contact",
+    "intro": "If you want to get in touch about the product, early access or legal topics, use the options below.",
+    "emailTitle": "Email",
+    "emailText": "For general questions, feedback or privacy requests, write to us directly.",
+    "emailValue": "hello@notely.app",
+    "instagramTitle": "Instagram",
+    "instagramText": "Follow product updates, launch notes and early previews.",
+    "instagramValue": "@notely.app",
+    "responseTitle": "Response time",
+    "responseText": "We usually reply within a few business days."
+  },
+  "messages": {
+    "invalidEmail": "Please enter a valid email address.",
+    "emailSuccess": "You are on the early access list.",
+    "surveySuccess": "Thanks. Your feedback has been saved.",
+    "formError": "Something went wrong. Please try again.",
+    "emailExists": "This email is already on the waitlist.",
+    "supabaseConfigError": "Supabase is not configured correctly.",
+    "supabasePolicyError": "Supabase rejected the request. Please check the SQL policies."
+  }
 }

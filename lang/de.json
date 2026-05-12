@@ -1,11 +1,165 @@
 {
-    "general" : {
-    "title": "notely Landingpage",
-    "callBtn": "Jetzt sichern!",
+  "general": {
+    "title": "Notely | Minimalistische Startup Landingpage",
+    "joinEarlyAccess": "Early Access sichern",
+    "loading": "Lädt...",
     "contact": "Kontakt",
     "imprint": "Impressum",
-    "privacyPolicy": "Datenschutzbestimmungen",
-    "heroText": "Schule neu gedacht.",
-    "heroSubtext": "Notely ist die digitale Lernplattform für Schüler. Alle Informationen, Materialien und Termine an einem Ort."
+    "privacyPolicy": "Datenschutz",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "nav": {
+    "features": "Features",
+    "survey": "Umfrage",
+    "earlyAccess": "Early Access"
+  },
+  "hero": {
+    "title": "Verwandle Notizen mit KI in Lernkarten, die wirklich beim Lernen helfen.",
+    "subtitle": "Notely fasst Inhalte zusammen, erkennt wichtige Begriffe und baut aus deinen Notizen in Sekunden klare Lernkarten für den Schulalltag.",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "Deine E-Mail eingeben",
+    "note": "Sei unter den ersten Nutzern."
+  },
+  "stats": {
+    "waitlist": "Warteliste",
+    "responses": "Antworten",
+    "countries": "Länder"
+  },
+  "preview": {
+    "title": "KI-Lernmodus",
+    "metric": "Lernkarten erstellt",
+    "copy": "Aus einer langen Notiz wird automatisch ein klarer Satz an Fragen und Antworten.",
+    "secondaryTitle": "Aus Notiz zu Karte",
+    "secondaryMetric": "in wenigen Sekunden",
+    "secondaryCopy": "Wichtige Begriffe, Definitionen und Abfragen werden direkt aus deinem Stoff erkannt."
+  },
+  "features": {
+    "title": "Weniger sortieren. Mehr wirklich lernen.",
+    "cards": {
+      "one": {
+        "title": "KI macht Lernkarten",
+        "text": "Wandle Notizen automatisch in verständliche Fragen und Antworten um."
+      },
+      "two": {
+        "title": "Wichtige Inhalte erkennen",
+        "text": "Begriffe, Zusammenhänge und Kernaussagen werden direkt aus deinem Stoff herausgezogen."
+      },
+      "three": {
+        "title": "Mobile first",
+        "text": "Lerne unterwegs mit ruhigem Design, klaren Karten und schnellen Wiederholungen."
+      }
     }
+  },
+  "survey": {
+    "title": "Hilf dabei, die App zu gestalten",
+    "subtitle": "Wir bauen das Produkt von Anfang an gemeinsam mit der Community.",
+    "questions": {
+      "source": "1. Wo hast du uns gefunden?",
+      "feature": "2. Meistgewolltes Feature",
+      "premium": "3. Würdest du für Premium bezahlen?",
+      "price": "Wie viel wärst du bereit zu bezahlen?",
+      "device": "4. Gerätetyp",
+      "feedback": "Optionales Feedback"
+    },
+    "options": {
+      "source": {
+        "instagram": "Instagram",
+        "tiktok": "TikTok",
+        "friend": "Freund",
+        "google": "Google",
+        "other": "Sonstiges"
+      },
+      "feature": {
+        "marketplace": "KI-Lernkarten",
+        "community": "Lernmodus",
+        "tracking": "Fortschritt",
+        "notifications": "Erinnerungen"
+      },
+      "premium": {
+        "yes": "Ja",
+        "maybe": "Vielleicht",
+        "no": "Nein"
+      },
+      "price": {
+        "min": "0 €",
+        "max": "20 €+",
+        "free": "Kostenlos"
+      },
+      "device": {
+        "iphone": "iPhone",
+        "android": "Android"
+      }
+    },
+    "feedbackPlaceholder": "Was sollten Apps besser machen?",
+    "submit": "Feedback senden"
+  },
+  "cta": {
+    "title": "Hol dir Early Access vor dem öffentlichen Launch.",
+    "subtitle": "Trag dich für Launch-Updates und frühen Zugriff ein.",
+    "emailLabel": "E-Mail-Adresse",
+    "emailPlaceholder": "Deine E-Mail für die Warteliste",
+    "button": "Early Access erhalten"
+  },
+  "footer": {
+    "socials": {
+      "instagram": "Instagram"
+    }
+  },
+  "legal": {
+    "home": "Startseite",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt",
+    "backLink": "Zurück zur Landingpage"
+  },
+  "imprintPage": {
+    "metaTitle": "Notely | Impressum",
+    "title": "Impressum",
+    "intro": "Angaben gemäß § 5 TMG.",
+    "companyLabel": "Anbieter",
+    "companyValue": "Notely\nTim Rothamel\nMusterstraße 12\n10115 Berlin\nDeutschland",
+    "contactLabel": "Kontaktangaben",
+    "contactValue": "E-Mail: hello@notely.app\nInstagram: @notely.app",
+    "responsibleLabel": "Verantwortlich für den Inhalt",
+    "responsibleValue": "Tim Rothamel",
+    "disclaimerLabel": "Haftungshinweis",
+    "disclaimerValue": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+  },
+  "privacyPage": {
+    "metaTitle": "Notely | Datenschutz",
+    "title": "Datenschutz",
+    "intro": "Auf dieser Seite erklären wir, wie personenbezogene Daten auf dieser Website verarbeitet werden.",
+    "sectionOneTitle": "1. Verantwortliche Stelle",
+    "sectionOneText": "Verantwortlich für die Datenverarbeitung auf dieser Website ist Notely, Tim Rothamel, Musterstraße 12, 10115 Berlin, Deutschland.",
+    "sectionTwoTitle": "2. Erhobene Daten",
+    "sectionTwoText": "Wir verarbeiten Daten, die du uns freiwillig über das Early-Access-Formular oder die Umfrage übermittelst, zum Beispiel E-Mail-Adressen, Feedback, Gerätetypen und Produktinteressen.",
+    "sectionThreeTitle": "3. Zweck der Verarbeitung",
+    "sectionThreeText": "Die übermittelten Daten werden genutzt, um die Warteliste zu verwalten, das Produkt zu verbessern und besser zu verstehen, welche Funktionen für zukünftige Nutzer relevant sind.",
+    "sectionFourTitle": "4. Speicherung und Tools",
+    "sectionFourText": "Übermittelte Daten werden über Supabase gespeichert. Wir behalten die Informationen nur so lange, wie sie für Produktentwicklung, Kommunikation oder gesetzliche Pflichten erforderlich sind.",
+    "sectionFiveTitle": "5. Deine Rechte",
+    "sectionFiveText": "Du hast das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung deiner gespeicherten personenbezogenen Daten. Außerdem kannst du der Verarbeitung jederzeit widersprechen."
+  },
+  "contactPage": {
+    "metaTitle": "Notely | Kontakt",
+    "title": "Kontakt",
+    "intro": "Wenn du Fragen zum Produkt, zu Early Access oder zu rechtlichen Themen hast, findest du hier die passenden Kontaktwege.",
+    "emailTitle": "E-Mail",
+    "emailText": "Für allgemeine Fragen, Feedback oder Datenschutzanfragen kannst du uns direkt schreiben.",
+    "emailValue": "hello@notely.app",
+    "instagramTitle": "Instagram",
+    "instagramText": "Hier findest du Produktupdates, Launch-Hinweise und erste Einblicke.",
+    "instagramValue": "@notely.app",
+    "responseTitle": "Antwortzeit",
+    "responseText": "In der Regel antworten wir innerhalb weniger Werktage."
+  },
+  "messages": {
+    "invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "emailSuccess": "Du bist auf der Early-Access-Liste.",
+    "surveySuccess": "Danke. Dein Feedback wurde gespeichert.",
+    "formError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "emailExists": "Diese E-Mail steht bereits auf der Warteliste.",
+    "supabaseConfigError": "Supabase ist nicht korrekt konfiguriert.",
+    "supabasePolicyError": "Supabase hat die Anfrage abgelehnt. Bitte prüfe die SQL-Policies."
+  }
 }

@@ -1,0 +1,280 @@
+:root {
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --primary-active: #3730A3;
+  --background: #0F172A;
+  --surface: #1E293B;
+  --border: #334155;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --accent: #06B6D4;
+  --success: #22C55E;
+  --error: #EF4444;
+  --container: 980px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --shadow-soft: 0 20px 50px color-mix(in srgb, var(--background) 64%, transparent);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 9%, transparent), transparent 26%),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--primary) 13%, transparent), transparent 32%),
+    linear-gradient(180deg, color-mix(in srgb, var(--background) 97%, var(--surface) 3%), color-mix(in srgb, var(--background) 93%, black 7%));
+  color: var(--text-primary);
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+}
+
+.ambient {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(54px);
+  pointer-events: none;
+  opacity: 0.22;
+  animation: drift 15s ease-in-out infinite;
+}
+
+.ambient-one {
+  top: 4rem;
+  left: -6rem;
+  width: 16rem;
+  height: 16rem;
+  background: color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+.ambient-two {
+  top: 12rem;
+  right: -8rem;
+  width: 19rem;
+  height: 19rem;
+  background: color-mix(in srgb, var(--primary) 28%, transparent);
+}
+
+.site-header,
+.legal-main {
+  width: min(calc(100% - 1.25rem), var(--container));
+  margin: 0 auto;
+}
+
+.site-header {
+  padding-top: 0.75rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--border) 62%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 34%, transparent);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--background) 40%, transparent);
+}
+
+.brand-logo {
+  width: clamp(108px, 24vw, 144px);
+}
+
+.nav-links,
+.lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  transition: color 180ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--text-primary);
+  outline: none;
+}
+
+.lang-switch {
+  gap: 0.3rem;
+  padding: 0.3rem;
+  border: 1px solid color-mix(in srgb, var(--border) 74%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--background) 68%, transparent);
+}
+
+.lang-btn {
+  min-width: 48px;
+  padding: 0.7rem 0.9rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus-visible,
+.lang-btn.is-active {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 76%, transparent), color-mix(in srgb, var(--accent) 22%, transparent));
+  color: var(--text-primary);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.legal-main {
+  padding: 3rem 0 4rem;
+}
+
+.hero-card,
+.legal-card {
+  border: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 72%, transparent), color-mix(in srgb, var(--background) 78%, transparent));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-card {
+  padding: 1.35rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  transition: color 180ms ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--text-primary);
+  outline: none;
+}
+
+.back-link::before {
+  content: "<";
+}
+
+.hero-card h1 {
+  margin: 1rem 0 0.65rem;
+  font-size: clamp(2.2rem, 9vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.intro,
+.legal-card p {
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.legal-grid,
+.stack-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.legal-card {
+  padding: 1.3rem;
+}
+
+.legal-card h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.1rem;
+}
+
+.legal-card p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+.contact-link {
+  display: inline-flex;
+  margin-top: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: color-mix(in srgb, var(--accent) 68%, var(--text-primary) 32%);
+  outline: none;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(12px, -10px, 0);
+  }
+}
+
+@media (min-width: 760px) {
+  .site-header,
+  .legal-main {
+    width: min(calc(100% - 2rem), var(--container));
+  }
+
+  .legal-main {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .hero-card {
+    padding: 1.6rem;
+  }
+
+  .legal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .legal-card-wide {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 759px) {
+  .nav-links {
+    display: none;
+  }
+}

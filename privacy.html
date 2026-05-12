@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="privacyPage.metaTitle"></title>
+    <link rel="stylesheet" href="/privacy.css">
+    <script type="module" src="/src/js/legal-page.js"></script>
+</head>
+<body>
+    <div class="page-shell">
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+
+        <header class="site-header">
+            <nav class="navbar">
+                <a class="brand" href="/" aria-label="Notely home">
+                    <img class="brand-logo" src="/public/assets/svg/logo.svg" alt="Notely logo">
+                </a>
+
+                <div class="nav-links">
+                    <a href="/" data-i18n="legal.home"></a>
+                    <a href="/imprint.html" data-i18n="legal.imprint"></a>
+                    <a href="/privacy.html" data-i18n="legal.privacy"></a>
+                    <a href="/contact.html" data-i18n="legal.contact"></a>
+                </div>
+
+                <div class="lang-switch" aria-label="Language switch">
+                    <button onclick="window.changeLanguage('en')" class="lang-btn" data-lang="en" type="button">EN</button>
+                    <button onclick="window.changeLanguage('de')" class="lang-btn" data-lang="de" type="button">DE</button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="legal-main">
+            <section class="hero-card">
+                <a class="back-link" href="/" data-i18n="legal.backLink"></a>
+                <h1 data-i18n="privacyPage.title"></h1>
+                <p class="intro" data-i18n="privacyPage.intro"></p>
+            </section>
+
+            <section class="stack-grid">
+                <article class="legal-card">
+                    <h2 data-i18n="privacyPage.sectionOneTitle"></h2>
+                    <p data-i18n="privacyPage.sectionOneText"></p>
+                </article>
+                <article class="legal-card">
+                    <h2 data-i18n="privacyPage.sectionTwoTitle"></h2>
+                    <p data-i18n="privacyPage.sectionTwoText"></p>
+                </article>
+                <article class="legal-card">
+                    <h2 data-i18n="privacyPage.sectionThreeTitle"></h2>
+                    <p data-i18n="privacyPage.sectionThreeText"></p>
+                </article>
+                <article class="legal-card">
+                    <h2 data-i18n="privacyPage.sectionFourTitle"></h2>
+                    <p data-i18n="privacyPage.sectionFourText"></p>
+                </article>
+                <article class="legal-card">
+                    <h2 data-i18n="privacyPage.sectionFiveTitle"></h2>
+                    <p data-i18n="privacyPage.sectionFiveText"></p>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

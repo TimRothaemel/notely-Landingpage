@@ -4,33 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="general.title"></title>
-<script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="/main.css">
+    <script src="/supabase-config.js"></script>
+    <script type="module" src="/main.js"></script>
 </head>
 <body>
-    
-<header>
-    <div  class="lang-switch">
-        <button onclick="window.changeLanguage('en')" class="lang-btn">EN</button>
-        <button onclick="window.changeLanguage('de')" class="lang-btn">DE</button>
+    <div class="page-shell">
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+
+        <header class="site-header">
+            <nav class="navbar">
+                <a class="brand" href="#top" aria-label="Notely home">
+                    <img class="brand-logo" src="/public/assets/svg/logo.svg" alt="Notely logo">
+                </a>
+
+                <div class="nav-links">
+                    <a href="#features" data-i18n="nav.features"></a>
+                    <a href="#survey" data-i18n="nav.survey"></a>
+                    <a href="#cta" data-i18n="nav.earlyAccess"></a>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="lang-switch" aria-label="Language switch">
+                        <button onclick="window.changeLanguage('en')" class="lang-btn" data-lang="en" type="button">EN</button>
+                        <button onclick="window.changeLanguage('de')" class="lang-btn" data-lang="de" type="button">DE</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero section" id="top">
+                <div class="hero-copy reveal">
+                    <h1 class="hero-title" data-i18n="hero.title"></h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+
+                    <form class="email-form glass-card" id="hero-early-access-form" novalidate>
+                        <label class="sr-only" for="hero-email" data-i18n="hero.emailLabel"></label>
+                        <input id="hero-email" name="email" type="email" autocomplete="email" data-i18n-placeholder="hero.emailPlaceholder">
+                        <button class="primary-btn" type="submit" data-submit-label="general.joinEarlyAccess" data-loading-label="general.loading" data-i18n="general.joinEarlyAccess"></button>
+                    </form>
+
+                    <p class="form-message" id="hero-form-message" role="status" aria-live="polite"></p>
+                    <p class="hero-note" data-i18n="hero.note"></p>
+
+                    <div class="stats-strip glass-card reveal reveal-delay">
+                        <div class="stat-item">
+                            <span class="stat-value" data-stat="waitlist">0</span>
+                            <span class="stat-label" data-i18n="stats.waitlist"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" data-stat="responses">0</span>
+                            <span class="stat-label" data-i18n="stats.responses"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" data-stat="countries">0</span>
+                            <span class="stat-label" data-i18n="stats.countries"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-preview reveal reveal-delay" aria-hidden="true">
+                    <div class="preview-shell glass-card">
+                        <div class="preview-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="preview-screen">
+                            <div class="preview-block preview-block-primary">
+                                <p data-i18n="preview.title"></p>
+                                <strong data-i18n="preview.metric"></strong>
+                                <span data-i18n="preview.copy"></span>
+                            </div>
+                            <div class="preview-block">
+                                <p data-i18n="preview.secondaryTitle"></p>
+                                <strong data-i18n="preview.secondaryMetric"></strong>
+                                <span data-i18n="preview.secondaryCopy"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section" id="features">
+                <div class="section-heading reveal">
+                    <h2 data-i18n="features.title"></h2>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card glass-card reveal">
+                        <div class="feature-icon">01</div>
+                        <h3 data-i18n="features.cards.one.title"></h3>
+                        <p data-i18n="features.cards.one.text"></p>
+                    </article>
+                    <article class="feature-card glass-card reveal">
+                        <div class="feature-icon">02</div>
+                        <h3 data-i18n="features.cards.two.title"></h3>
+                        <p data-i18n="features.cards.two.text"></p>
+                    </article>
+                    <article class="feature-card glass-card reveal">
+                        <div class="feature-icon">03</div>
+                        <h3 data-i18n="features.cards.three.title"></h3>
+                        <p data-i18n="features.cards.three.text"></p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="survey section" id="survey">
+                <div class="section-heading reveal">
+                    <h2 data-i18n="survey.title"></h2>
+                    <p data-i18n="survey.subtitle"></p>
+                </div>
+
+                <form class="survey-form glass-card reveal" id="survey-form" novalidate>
+                    <div class="form-group">
+                        <p class="question" data-i18n="survey.questions.source"></p>
+                        <div class="option-grid">
+                            <label class="choice-pill"><input type="radio" name="source" value="instagram" checked><span data-i18n="survey.options.source.instagram"></span></label>
+                            <label class="choice-pill"><input type="radio" name="source" value="tiktok"><span data-i18n="survey.options.source.tiktok"></span></label>
+                            <label class="choice-pill"><input type="radio" name="source" value="friend"><span data-i18n="survey.options.source.friend"></span></label>
+                            <label class="choice-pill"><input type="radio" name="source" value="google"><span data-i18n="survey.options.source.google"></span></label>
+                            <label class="choice-pill"><input type="radio" name="source" value="other"><span data-i18n="survey.options.source.other"></span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="question" data-i18n="survey.questions.feature"></p>
+                        <div class="option-grid">
+                            <label class="choice-pill"><input type="radio" name="wanted_feature" value="ai_flashcards" checked><span data-i18n="survey.options.feature.marketplace"></span></label>
+                            <label class="choice-pill"><input type="radio" name="wanted_feature" value="study_mode"><span data-i18n="survey.options.feature.community"></span></label>
+                            <label class="choice-pill"><input type="radio" name="wanted_feature" value="progress_tracking"><span data-i18n="survey.options.feature.tracking"></span></label>
+                            <label class="choice-pill"><input type="radio" name="wanted_feature" value="smart_reminders"><span data-i18n="survey.options.feature.notifications"></span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="question" data-i18n="survey.questions.premium"></p>
+                        <div class="option-grid three-col">
+                            <label class="choice-pill"><input type="radio" name="premium_interest" value="yes" checked><span data-i18n="survey.options.premium.yes"></span></label>
+                            <label class="choice-pill"><input type="radio" name="premium_interest" value="maybe"><span data-i18n="survey.options.premium.maybe"></span></label>
+                            <label class="choice-pill"><input type="radio" name="premium_interest" value="no"><span data-i18n="survey.options.premium.no"></span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group conditional-group" id="price-group" hidden>
+                        <p class="question" data-i18n="survey.questions.price"></p>
+                        <div class="price-slider-card">
+                            <input id="price-expectation" class="price-slider" type="range" name="price_expectation" min="0" max="20" step="1" value="5">
+                            <div class="price-scale">
+                                <span data-i18n="survey.options.price.min"></span>
+                                <strong id="price-output"></strong>
+                                <span data-i18n="survey.options.price.max"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="question" data-i18n="survey.questions.device"></p>
+                        <div class="option-grid two-col">
+                            <label class="choice-pill"><input type="radio" name="device_type" value="iphone" checked><span data-i18n="survey.options.device.iphone"></span></label>
+                            <label class="choice-pill"><input type="radio" name="device_type" value="android"><span data-i18n="survey.options.device.android"></span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="question" for="app-feedback" data-i18n="survey.questions.feedback"></label>
+                        <textarea id="app-feedback" name="feedback" rows="4" data-i18n-placeholder="survey.feedbackPlaceholder"></textarea>
+                    </div>
+
+                    <button class="primary-btn form-submit" type="submit" data-submit-label="survey.submit" data-loading-label="general.loading" data-i18n="survey.submit"></button>
+                    <p class="form-message" id="survey-form-message" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <section class="cta section" id="cta">
+                <div class="cta-card glass-card reveal">
+                    <h2 data-i18n="cta.title"></h2>
+                    <p data-i18n="cta.subtitle"></p>
+
+                    <form class="email-form" id="cta-early-access-form" novalidate>
+                        <label class="sr-only" for="cta-email" data-i18n="cta.emailLabel"></label>
+                        <input id="cta-email" name="email" type="email" autocomplete="email" data-i18n-placeholder="cta.emailPlaceholder">
+                        <button class="primary-btn" type="submit" data-submit-label="cta.button" data-loading-label="general.loading" data-i18n="cta.button"></button>
+                    </form>
+
+                    <p class="form-message form-message-center" id="cta-form-message" role="status" aria-live="polite"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-brand">
+                <a href="/" aria-label="Notely home">
+                    <img class="footer-logo" src="/public/assets/svg/logo.svg" alt="Notely logo">
+                </a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" data-i18n="footer.socials.instagram"></a>
+            </div>
+            <div class="footer-links">
+                <a href="/imprint.html" data-i18n="general.imprint"></a>
+                <a href="/privacy.html" data-i18n="general.privacyPolicy"></a>
+                <a href="/contact.html" data-i18n="general.contact"></a>
+            </div>
+        </footer>
     </div>
-</header>
-<main>
-    <section class="hero">
-        <p data-i18n="general.heroText"></p>
-        <p data-i18n="general.heroSubtext"></p>
-<img src="/public/assets/svg/logo.svg" alt="logo notely svg">
-    <element class="call-action">
-        <button class="call-btn" data-i18n="general.callBtn"></button>
-    </element>
-    </section>
-    <section class="survey">
-        survey section
-    </section>
-</main>
-<footer>
-    <a href="" data-i18n="general.contact"></a>
-    <a href="" data-i18n="general.imprint"></a>
-    <a href="" data-i18n="general.privacyPolicy"></a>
-</footer>
 </body>
 </html>
