@@ -87,6 +87,5 @@ export async function loadLiveStats() {
   return {
     waitlist: Number(stats.waitlist ?? 0),
     responses: Number(stats.responses ?? 0),
-    countries: Number(stats.countries ?? 0),
   };
 }
