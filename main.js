@@ -57,7 +57,34 @@ function togglePriceQuestion() {
 }
 
 function setupRevealAnimation() {
-  const revealElements = document.querySelectorAll(".reveal");
+  const revealElements = [...document.querySelectorAll(".reveal")];
+
+  if (revealElements.length === 0) {
+    return;
+  }
+
+  const revealIfInViewport = () => {
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    revealElements.forEach((element) => {
+      if (element.classList.contains("is-visible")) {
+        return;
+      }
+
+      const rect = element.getBoundingClientRect();
+      const visibleTop = rect.top < viewportHeight * 0.92;
+      const visibleBottom = rect.bottom > 0;
+
+      if (visibleTop && visibleBottom) {
+        element.classList.add("is-visible");
+      }
+    });
+  };
+
+  if (!("IntersectionObserver" in window)) {
+    revealElements.forEach((element) => element.classList.add("is-visible"));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -69,12 +96,22 @@ function setupRevealAnimation() {
       });
     },
     {
-      threshold: 0.18,
-      rootMargin: "0px 0px -40px 0px",
+      threshold: 0.12,
+      rootMargin: "0px 0px -24px 0px",
     },
   );
 
-  revealElements.forEach((element) => observer.observe(element));
+  revealIfInViewport();
+  requestAnimationFrame(revealIfInViewport);
+  window.addEventListener("load", revealIfInViewport, { once: true });
+  window.addEventListener("resize", revealIfInViewport, { passive: true });
+  window.addEventListener("orientationchange", revealIfInViewport, { passive: true });
+
+  revealElements.forEach((element) => {
+    if (!element.classList.contains("is-visible")) {
+      observer.observe(element);
+    }
+  });
 }
 
 function formatNumber(value) {
