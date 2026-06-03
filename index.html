@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="general.title"></title>
+    <meta name="description" content="Notely transforms your notes into AI-powered flashcards for smarter studying. Join our early access program.">
+    <meta property="og:title" content="Notely | Turn Your Notes into AI Flashcards">
+    <meta property="og:description" content="Turn your notes into AI flashcards that actually help you study. Notely summarizes content, detects key concepts and builds clean flashcards from your notes in seconds.">
+    <meta property="og:image" content="https://notely-landingpage.netlify.app//public/assets/svg/logo.svg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notely | Turn Your Notes into AI Flashcards">
+    <meta name="twitter:description" content="Turn your notes into AI flashcards that actually help you study. Notely summarizes content, detects key concepts and builds clean flashcards from your notes in seconds.">
+    <meta name="twitter:image" content="https://notely-landingpage.netlify.app//public/assets/svg/logo.svg">
+    <title data-i18n="general.title">Notely | Landing Page</title>
     <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/public/assets/svg/logo.svg" type="image/svg+xml">
     <script src="/supabase-config.js"></script>
     <script type="module" src="/main.js"></script>
 </head>
@@ -146,7 +156,7 @@
                     </div>
 
                     <div class="form-group conditional-group" id="price-group" hidden>
-                        <p class="question" data-i18n="survey.questions.price"></p>
+                        <label class="question" for="price-expectation" data-i18n="survey.questions.price"></label>
                         <div class="price-slider-card">
                             <input id="price-expectation" class="price-slider" type="range" name="price_expectation" min="0" max="20" step="1" value="5">
                             <div class="price-scale">
