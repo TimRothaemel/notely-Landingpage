@@ -9,13 +9,28 @@
     <meta property="og:description" content="Turn your notes into AI flashcards that actually help you study.">
     <meta property="og:image" content="https://notely-landingpage.netlify.app/public/assets/images/og-image.png">
     <meta property="og:url" content="https://notely-landingpage.netlify.app">
-    <meta property="og:type" content="website">
+        <meta property="og:type" content="website">
+        <meta name="theme-color" content="#0F172A">
 
-<meta name="twitter:card" content="summary_large_image">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Notely",
+            "url": "https://notely-landingpage.netlify.app/",
+            "description": "Turn your notes into AI flashcards that help you study faster and remember more.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Notely"
+            }
+        }
+        </script>
+
+        <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Notely | Turn Your Notes into AI Flashcards">
 <meta name="twitter:description" content="Turn your notes into AI flashcards that actually help you study.">
 <meta name="twitter:image" content="https://notely-landingpage.netlify.app/public/assets/images/og-image.png">
-    <title data-i18n="general.title">Notely | Landing Page</title>
+    <title data-i18n="general.title">Notely | Turn Your Notes into AI Flashcards</title>
     <link rel="stylesheet" href="/main.css">
     <link rel="icon" href="/public/assets/svg/logo.svg" type="image/svg+xml">
     <script src="/supabase-config.js"></script>
@@ -33,9 +48,9 @@
                 </a>
 
                 <div class="nav-links">
-                    <a href="#features" data-i18n="nav.features"></a>
-                    <a href="#survey" data-i18n="nav.survey"></a>
-                    <a href="#cta" data-i18n="nav.earlyAccess"></a>
+                    <a href="#features" data-i18n="nav.features">Features</a>
+                    <a href="#survey" data-i18n="nav.survey">Survey</a>
+                    <a href="#cta" data-i18n="nav.earlyAccess">Get Early Access</a>
                 </div>
 
                 <div class="nav-actions">
@@ -50,26 +65,26 @@
         <main>
             <section class="hero section" id="top">
                 <div class="hero-copy reveal">
-                    <h1 class="hero-title" data-i18n="hero.title"></h1>
-                    <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+                    <h1 class="hero-title" data-i18n="hero.title">Turn your notes into AI flashcards</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Create intelligent flashcards from your existing notes to study smarter and faster.</p>
 
                     <form class="email-form glass-card" id="hero-early-access-form" novalidate>
-                        <label class="sr-only" for="hero-email" data-i18n="hero.emailLabel"></label>
-                        <input id="hero-email" name="email" type="email" autocomplete="email" data-i18n-placeholder="hero.emailPlaceholder">
-                        <button class="primary-btn" type="submit" data-submit-label="general.joinEarlyAccess" data-loading-label="general.loading" data-i18n="general.joinEarlyAccess"></button>
+                        <label class="sr-only" for="hero-email" data-i18n="hero.emailLabel">Email address</label>
+                        <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Enter your email" data-i18n-placeholder="hero.emailPlaceholder">
+                        <button class="primary-btn" type="submit" data-submit-label="general.joinEarlyAccess" data-loading-label="general.loading" data-i18n="general.joinEarlyAccess">Join waitlist</button>
                     </form>
 
                     <p class="form-message" id="hero-form-message" role="status" aria-live="polite"></p>
-                    <p class="hero-note" data-i18n="hero.note"></p>
+                    <p class="hero-note" data-i18n="hero.note">Join our early access waitlist — limited spots available.</p>
 
                     <div class="stats-strip glass-card reveal reveal-delay">
                         <div class="stat-item">
                             <span class="stat-value" data-stat="waitlist">0</span>
-                            <span class="stat-label" data-i18n="stats.waitlist"></span>
+                            <span class="stat-label" data-i18n="stats.waitlist">Waitlist</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-value" data-stat="responses">0</span>
-                            <span class="stat-label" data-i18n="stats.responses"></span>
+                            <span class="stat-label" data-i18n="stats.responses">Survey responses</span>
                         </div>
                     </div>
                 </div>
@@ -83,14 +98,14 @@
                         </div>
                         <div class="preview-screen">
                             <div class="preview-block preview-block-primary">
-                                <p data-i18n="preview.title"></p>
-                                <strong data-i18n="preview.metric"></strong>
-                                <span data-i18n="preview.copy"></span>
+                                <p data-i18n="preview.title">Study effectiveness</p>
+                                <strong data-i18n="preview.metric">+34%</strong>
+                                <span data-i18n="preview.copy">Faster recall using AI-generated flashcards</span>
                             </div>
                             <div class="preview-block">
-                                <p data-i18n="preview.secondaryTitle"></p>
-                                <strong data-i18n="preview.secondaryMetric"></strong>
-                                <span data-i18n="preview.secondaryCopy"></span>
+                                <p data-i18n="preview.secondaryTitle">Engagement</p>
+                                <strong data-i18n="preview.secondaryMetric">4.8</strong>
+                                <span data-i18n="preview.secondaryCopy">Average user rating from early testers</span>
                             </div>
                         </div>
                     </div>
@@ -99,37 +114,37 @@
 
             <section class="features section" id="features">
                 <div class="section-heading reveal">
-                    <h2 data-i18n="features.title"></h2>
+                    <h2 data-i18n="features.title">Features</h2>
                 </div>
 
                 <div class="feature-grid">
                     <article class="feature-card glass-card reveal">
                         <div class="feature-icon">01</div>
-                        <h3 data-i18n="features.cards.one.title"></h3>
-                        <p data-i18n="features.cards.one.text"></p>
+                        <h3 data-i18n="features.cards.one.title">AI Flashcards</h3>
+                        <p data-i18n="features.cards.one.text">Automatically convert notes into spaced-repetition flashcards.</p>
                     </article>
                     <article class="feature-card glass-card reveal">
                         <div class="feature-icon">02</div>
-                        <h3 data-i18n="features.cards.two.title"></h3>
-                        <p data-i18n="features.cards.two.text"></p>
+                        <h3 data-i18n="features.cards.two.title">Smart Summaries</h3>
+                        <p data-i18n="features.cards.two.text">Get concise summaries to focus on what matters most.</p>
                     </article>
                     <article class="feature-card glass-card reveal">
                         <div class="feature-icon">03</div>
-                        <h3 data-i18n="features.cards.three.title"></h3>
-                        <p data-i18n="features.cards.three.text"></p>
+                        <h3 data-i18n="features.cards.three.title">Progress Tracking</h3>
+                        <p data-i18n="features.cards.three.text">Track learning progress with intuitive metrics and streaks.</p>
                     </article>
                 </div>
             </section>
 
             <section class="survey section" id="survey">
                 <div class="section-heading reveal">
-                    <h2 data-i18n="survey.title"></h2>
-                    <p data-i18n="survey.subtitle"></p>
+                    <h2 data-i18n="survey.title">Help shape Notely</h2>
+                    <p data-i18n="survey.subtitle">Tell us what matters to you — it only takes a minute.</p>
                 </div>
 
                 <form class="survey-form glass-card reveal" id="survey-form" novalidate>
                     <div class="form-group">
-                        <p class="question" data-i18n="survey.questions.source"></p>
+                        <p class="question" data-i18n="survey.questions.source">How did you hear about Notely?</p>
                         <div class="option-grid">
                             <label class="choice-pill"><input type="radio" name="source" value="instagram" checked><span data-i18n="survey.options.source.instagram"></span></label>
                             <label class="choice-pill"><input type="radio" name="source" value="tiktok"><span data-i18n="survey.options.source.tiktok"></span></label>
@@ -140,7 +155,7 @@
                     </div>
 
                     <div class="form-group">
-                        <p class="question" data-i18n="survey.questions.feature"></p>
+                        <p class="question" data-i18n="survey.questions.feature">Which feature would you use most?</p>
                         <div class="option-grid">
                             <label class="choice-pill"><input type="radio" name="wanted_feature" value="ai_flashcards" checked><span data-i18n="survey.options.feature.marketplace"></span></label>
                             <label class="choice-pill"><input type="radio" name="wanted_feature" value="study_mode"><span data-i18n="survey.options.feature.community"></span></label>
@@ -150,7 +165,7 @@
                     </div>
 
                     <div class="form-group">
-                        <p class="question" data-i18n="survey.questions.premium"></p>
+                        <p class="question" data-i18n="survey.questions.premium">Would you consider a premium plan?</p>
                         <div class="option-grid three-col">
                             <label class="choice-pill"><input type="radio" name="premium_interest" value="yes" checked><span data-i18n="survey.options.premium.yes"></span></label>
                             <label class="choice-pill"><input type="radio" name="premium_interest" value="maybe"><span data-i18n="survey.options.premium.maybe"></span></label>
@@ -159,7 +174,7 @@
                     </div>
 
                     <div class="form-group conditional-group" id="price-group" hidden>
-                        <label class="question" for="price-expectation" data-i18n="survey.questions.price"></label>
+                        <label class="question" for="price-expectation" data-i18n="survey.questions.price">What monthly price would you expect?</label>
                         <div class="price-slider-card">
                             <input id="price-expectation" class="price-slider" type="range" name="price_expectation" min="0" max="20" step="1" value="5">
                             <div class="price-scale">
@@ -171,7 +186,7 @@
                     </div>
 
                     <div class="form-group">
-                        <p class="question" data-i18n="survey.questions.device"></p>
+                        <p class="question" data-i18n="survey.questions.device">Which device do you use most?</p>
                         <div class="option-grid two-col">
                             <label class="choice-pill"><input type="radio" name="device_type" value="iphone" checked><span data-i18n="survey.options.device.iphone"></span></label>
                             <label class="choice-pill"><input type="radio" name="device_type" value="android"><span data-i18n="survey.options.device.android"></span></label>
@@ -179,24 +194,24 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="question" for="app-feedback" data-i18n="survey.questions.feedback"></label>
-                        <textarea id="app-feedback" name="feedback" rows="4" data-i18n-placeholder="survey.feedbackPlaceholder"></textarea>
+                        <label class="question" for="app-feedback" data-i18n="survey.questions.feedback">Any other feedback?</label>
+                        <textarea id="app-feedback" name="feedback" rows="4" placeholder="Share any thoughts or suggestions" data-i18n-placeholder="survey.feedbackPlaceholder"></textarea>
                     </div>
 
-                    <button class="primary-btn form-submit" type="submit" data-submit-label="survey.submit" data-loading-label="general.loading" data-i18n="survey.submit"></button>
+                    <button class="primary-btn form-submit" type="submit" data-submit-label="survey.submit" data-loading-label="general.loading" data-i18n="survey.submit">Submit survey</button>
                     <p class="form-message" id="survey-form-message" role="status" aria-live="polite"></p>
                 </form>
             </section>
 
             <section class="cta section" id="cta">
                 <div class="cta-card glass-card reveal">
-                    <h2 data-i18n="cta.title"></h2>
-                    <p data-i18n="cta.subtitle"></p>
+                    <h2 data-i18n="cta.title">Get early access</h2>
+                    <p data-i18n="cta.subtitle">Be among the first to try Notely and help shape the product.</p>
 
                     <form class="email-form" id="cta-early-access-form" novalidate>
-                        <label class="sr-only" for="cta-email" data-i18n="cta.emailLabel"></label>
-                        <input id="cta-email" name="email" type="email" autocomplete="email" data-i18n-placeholder="cta.emailPlaceholder">
-                        <button class="primary-btn" type="submit" data-submit-label="cta.button" data-loading-label="general.loading" data-i18n="cta.button"></button>
+                        <label class="sr-only" for="cta-email" data-i18n="cta.emailLabel">Email address</label>
+                        <input id="cta-email" name="email" type="email" autocomplete="email" placeholder="your@email.com" data-i18n-placeholder="cta.emailPlaceholder">
+                        <button class="primary-btn" type="submit" data-submit-label="cta.button" data-loading-label="general.loading" data-i18n="cta.button">Request access</button>
                     </form>
 
                     <p class="form-message form-message-center" id="cta-form-message" role="status" aria-live="polite"></p>
@@ -211,12 +226,12 @@
                 </a>
             </div>
             <div class="footer-socials">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" data-i18n="footer.socials.instagram"></a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" data-i18n="footer.socials.instagram">Instagram</a>
             </div>
             <div class="footer-links">
-                <a href="/imprint.html" data-i18n="general.imprint"></a>
-                <a href="/privacy.html" data-i18n="general.privacyPolicy"></a>
-                <a href="/contact.html" data-i18n="general.contact"></a>
+                <a href="/imprint.html" data-i18n="general.imprint">Imprint</a>
+                <a href="/privacy.html" data-i18n="general.privacyPolicy">Privacy</a>
+                <a href="/contact.html" data-i18n="general.contact">Contact</a>
             </div>
         </footer>
     </div>
